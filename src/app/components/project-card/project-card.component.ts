@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
+
 import { IProject } from '../../interfaces/project.interface';
 
 

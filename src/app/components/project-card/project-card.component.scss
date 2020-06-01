@@ -1,4 +1,8 @@
 .project {
+  &-header {
+    color: #ffffff;
+  }
+
   &-title {
     color: #e04274;
   }
@@ -6,4 +10,8 @@
   &-offset {
     color: #29c05a;
   }
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, .5);
 }

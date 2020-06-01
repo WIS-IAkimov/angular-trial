@@ -1,4 +1,19 @@
 <div class="card project">
+  <div class="position-relative project-header">
+    <img class="card-img" [src]="project.image">
+
+    <div class="card-img-overlay d-flex flex-column justify-content-between">
+      <div *ngIf="project.price" class="d-flex flex-column align-self-end align-items-center">
+        <button type="button" class="btn btn-success">Buy Now</button>
+        <b class="p-1 mt-1 bg-dark">${{ project.price }} / ton</b>
+      </div>
+
+      <h2 class="mt-auto mb-0">
+        <span class="p-2 bg-dark">{{ project.name }}</span>
+      </h2>
+    </div>
+  </div>
+
   <div class="card-body">
     <h5 class="project-title">{{ project.title }}</h5>
     <h5 class="project-offset">{{ project.offset | number }} lbs. offset</h5>
