@@ -11,6 +11,9 @@ import { IProject } from '../../interfaces/project.interface';
   templateUrl: './main.container.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [ProjectsService],
+  host: {
+    class: 'd-block container',
+  }
 })
 export class MainContainer implements OnInit {
 
