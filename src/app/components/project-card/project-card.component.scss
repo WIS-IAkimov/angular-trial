@@ -3,6 +3,10 @@
 .project {
   &-header {
     color: #ffffff;
+
+    .card-img {
+      max-height: 284px;
+    }
   }
 
   &-title {
