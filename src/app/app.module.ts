@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MainContainer } from './containers/main/main.container';
+import { MainContainer } from './containers/main';
 import { HeaderComponent } from './components/header';
 
 
