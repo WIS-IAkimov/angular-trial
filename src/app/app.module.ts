@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MainContainer } from './containers/main';
 import { HeaderComponent } from './components/header';
+import { ProjectCardComponent } from './components/project-card';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { HeaderComponent } from './components/header';
     AppComponent,
     MainContainer,
     HeaderComponent,
+    ProjectCardComponent,
   ],
   bootstrap: [AppComponent],
 })

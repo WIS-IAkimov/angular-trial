@@ -1,1 +1,7 @@
-<app-header></app-header>
+<app-header class="mb-3"></app-header>
+
+<div class="row row-cols-2">
+  <ng-container *ngFor="let project of projects$ | async">
+    <app-project class="col mb-3" [project]="project"></app-project>
+  </ng-container>
+</div>

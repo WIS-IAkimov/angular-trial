@@ -1,6 +1,9 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
+
+import { Observable } from 'rxjs';
 
 import { ProjectsService } from '../../services/projects.service';
+import { IProject } from '../../interfaces/project.interface';
 
 
 @Component({
@@ -9,8 +12,16 @@ import { ProjectsService } from '../../services/projects.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [ProjectsService],
 })
-export class MainContainer {
+export class MainContainer implements OnInit {
 
-  constructor() { }
+  public projects$: Observable<IProject[]>;
+
+  constructor(
+    private readonly _projectsService: ProjectsService,
+  ) { }
+
+  public ngOnInit() {
+    this.projects$ = this._projectsService.getProjects();
+  }
 
 }
