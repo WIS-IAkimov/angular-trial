@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
 import { IProject } from '../../interfaces/project.interface';
 
@@ -12,14 +12,11 @@ import { IProject } from '../../interfaces/project.interface';
     class: 'd-flex',
   },
 })
-export class ProjectCardComponent implements OnInit {
+export class ProjectCardComponent {
 
   @Input()
   public project: IProject;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

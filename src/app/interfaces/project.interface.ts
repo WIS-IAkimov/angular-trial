@@ -1,4 +1,5 @@
 export interface IProject {
+
   id: number;
   image: string;
   name: string;
@@ -6,4 +7,5 @@ export interface IProject {
   description: string;
   offset: number;
   price?: number;
+
 }

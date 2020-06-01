@@ -23,7 +23,7 @@ export class MainContainer implements OnInit {
     private readonly _projectsService: ProjectsService,
   ) { }
 
-  public ngOnInit() {
+  public ngOnInit(): void {
     this.projects$ = this._projectsService.getProjects();
   }
 
