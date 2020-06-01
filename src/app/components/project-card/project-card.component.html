@@ -6,7 +6,7 @@
       <div *ngIf="project.price" class="d-flex flex-column align-self-end align-items-center">
         <button type="button" class="py-2 px-3 btn btn-success">Buy Now</button>
 
-        <b class="p-1 mt-1 bg-dark">{{ project.price | currency }} / ton</b>
+        <b class="p-1 mt-1 bg-dark"><small>{{ project.price | currency }} / ton</small></b>
       </div>
 
       <h2 class="mt-auto mb-0">
