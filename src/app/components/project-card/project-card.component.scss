@@ -1,14 +1,16 @@
+@import "src/styles/variables";
+
 .project {
   &-header {
     color: #ffffff;
   }
 
   &-title {
-    color: #e04274;
+    color: $pink;
   }
 
   &-offset {
-    color: #29c05a;
+    color: $green;
   }
 }
 
